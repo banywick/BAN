@@ -11,3 +11,5 @@ def get_page2(request):
     profile = Profile.objects.all()
     serializer = ProfileSerializers(profile, many=True)
     return Response(serializer.data)
+
+
